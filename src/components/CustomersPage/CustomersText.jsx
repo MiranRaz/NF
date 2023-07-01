@@ -19,7 +19,7 @@ const CustomersText = () => {
         const [x, xEnd] =
           index % 2 === 0 // Even-indexed sections
             ? [w.scrollWidth * -0.5, 0]
-            : [w.scrollWidth * 0.3, section.offsetWidth * -0.5];
+            : [w.scrollWidth * 0.5, section.offsetWidth * -0.5];
         gsap.fromTo(
           w,
           { x },
