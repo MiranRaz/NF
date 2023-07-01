@@ -30,7 +30,7 @@ const App = () => {
             style={{
               height: "100vh",
               width: "100%",
-              backgroundColor: "black",
+              backgroundColor: "gray",
               color: "white",
               padding: 0,
               margin: 0,
@@ -38,7 +38,6 @@ const App = () => {
           >
             nas film slike sa snimanja (reklame,promo,spotovi) on scroll
           </div>
-          {/*  insert button to see all gear we own/use/rent */}
           <RedEpic />
           <div
             style={{

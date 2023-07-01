@@ -59,10 +59,10 @@ const NavBar = () => {
 
         if (direction === 1) {
           // Scrolling down
-          return `${Math.min(200 + position * 500, 700)}px`;
+          return `${Math.min(200 + position * 500, 888)}px`;
         } else {
           // Scrolling up
-          return `${Math.max(700 - position * 500, 200)}px`;
+          return `${Math.max(888 - position * 500, 200)}px`;
         }
       },
       scrollTrigger: {
@@ -90,6 +90,7 @@ const NavBar = () => {
           <Typography
             sx={{
               flexGrow: 1,
+              zIndex: 1,
             }}
           >
             <img
@@ -97,7 +98,7 @@ const NavBar = () => {
               alt=""
               draggable={false}
               className="image-size"
-              style={{ width: "700px" }}
+              style={{ width: "888px" }}
             />
           </Typography>
           <IconButton
