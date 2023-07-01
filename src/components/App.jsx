@@ -2,10 +2,8 @@ import "./App.css";
 import RedEpic from "./RedEpic/RedEpic.jsx";
 import NavBar from "./NavBar/NavBar.jsx";
 import HomePage from "./HomePage/HomePage.jsx";
-import { Grid } from "@mui/material";
 import Loader from "./Loader.jsx";
 import { useEffect, useState } from "react";
-import film from "../assets/film.jpg";
 import CustomersPage from "./CustomersPage/CustomersPage.jsx";
 
 const App = () => {
@@ -32,7 +30,8 @@ const App = () => {
             style={{
               height: "100vh",
               width: "100%",
-              backgroundColor: "green",
+              backgroundColor: "black",
+              color: "white",
               padding: 0,
               margin: 0,
             }}
