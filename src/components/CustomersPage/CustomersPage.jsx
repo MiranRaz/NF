@@ -4,9 +4,9 @@ const CustomersPage = () => {
   return (
     <div
       style={{
-        height: "241vh",
+        height: "244vh",
         width: "100%",
-        backgroundColor: "beige",
+        backgroundColor: "#F0EEDE",
       }}
     >
       <CustomersText />

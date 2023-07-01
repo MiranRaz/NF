@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import nf from "../../assets/nf.png";
 
 const HomePage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -52,19 +53,21 @@ const HomePage = () => {
         width: "100vw",
         backgroundColor: "black",
         position: "relative", // Added position relative to the container div
-        zIndex: 200,
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <div
         id="testarossa"
         style={{
+          display: "flex",
           width: "569px",
           height: "100vh",
           position: "absolute",
           top: "0%",
           left: "2.7%",
           transform: "translate(-3%, -30%)",
-          zIndex: 1,
+          zIndex: 10,
           overflow: "hidden",
         }}
       >
@@ -75,13 +78,52 @@ const HomePage = () => {
             height: "466px",
             position: "relative",
             top: `${imageItemTop}px`,
-            backgroundColor: "beige",
-            fontSize: "38px",
+            backgroundColor: "#F0EEDE",
+            fontSize: "29.5px",
+            padding: "8px",
           }}
         >
-          NAŠ FILM JE AUDIO I VIDEO PRODUKCIJSKA KUĆA SA BAZOM U SARAJEVU.
-          PRODUKCIJA NUDI BOGATI ASORTMAN OPREME ZA AUDIO I VIDEO.
-          NAJSAVREMENIJU OPREMA ZA ZVUK, USNIMAVANJE I MIX/MASTER KAO I VIDEO.
+          insert image
+        </div>
+      </div>
+      <div
+        style={{
+          color: "whitesmoke",
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "flex-end",
+          flexDirection: "column",
+        }}
+      >
+        <img
+          src={nf}
+          alt={""}
+          style={{
+            width: "888px",
+            paddingRight: "2%",
+            zIndex: 2,
+          }}
+        />
+        <div
+          style={{
+            width: "40%",
+            fontSize: "23px",
+            position: "absolute",
+            top: "50%",
+            right: "10%",
+            textAlign: "center",
+            backgroundColor: "#E9E9E9",
+            color: "black",
+            zIndex: 12,
+          }}
+        >
+          `Naš Film` je vrhunska audio i video produkcijska kuća u Sarajevu.
+          Nudimo različite mikrofone i opremu za snimanje zvuka, kao i najbolje
+          kamere, objektive i dronove za snimanje visokokvalitetnih video
+          materijala. Naš tim stručnjaka, uključujući reditelje i producente,
+          pruža podršku u režiji i vođenju produkcije. Sa svjetski priznatim
+          standardima za snimanje zvuka i videa, `Naš Film` je vaš pouzdan
+          partner u audio i video produkciji.
         </div>
       </div>
     </div>

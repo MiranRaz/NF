@@ -1,5 +1,3 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState, useEffect } from "react";
 import {
   Box,
@@ -22,7 +20,7 @@ import {
   Mail as MailIcon,
 } from "@mui/icons-material";
 import { AppBar, DrawerHeader } from "./NavBarStyling.js";
-import nf from "../../assets/nf.png";
+import nf2 from "../../assets/nf2.png";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -47,33 +45,6 @@ const NavBar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(".image-size", {
-      width: (index, target) => {
-        const scrollTrigger = ScrollTrigger.getById(
-          target.getAttribute("image-size")
-        );
-        const position = scrollTrigger ? scrollTrigger.progress : 0;
-        const direction = scrollTrigger ? scrollTrigger.direction : 1;
-
-        if (direction === 1) {
-          // Scrolling down
-          return `${Math.min(200 + position * 500, 888)}px`;
-        } else {
-          // Scrolling up
-          return `${Math.max(888 - position * 500, 200)}px`;
-        }
-      },
-      scrollTrigger: {
-        trigger: ".image-size",
-        scrub: 2,
-        start: "top top",
-        end: "bottom top",
-      },
-    });
-  }, []);
-
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -94,11 +65,14 @@ const NavBar = () => {
             }}
           >
             <img
-              src={nf}
-              alt=""
+              src={nf2}
               draggable={false}
-              className="image-size"
-              style={{ width: "888px" }}
+              style={{
+                opacity: scrollPosition >= 300 ? 1 : 0, // Apply opacity based on scroll position
+                transition: "all 0.5s ease-in-out",
+                width: "87px",
+              }}
+              alt={""}
             />
           </Typography>
           <IconButton
