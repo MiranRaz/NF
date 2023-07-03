@@ -5,6 +5,7 @@ import HomePage from "./HomePage/HomePage.jsx";
 import Loader from "./Loader.jsx";
 import { useEffect, useState } from "react";
 import CustomersPage from "./CustomersPage/CustomersPage.jsx";
+import AboutPage from "./AboutPage/AboutPage.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -26,18 +27,7 @@ const App = () => {
           <NavBar />
           <HomePage />
           <CustomersPage />
-          <div
-            style={{
-              height: "100vh",
-              width: "100%",
-              backgroundColor: "gray",
-              color: "white",
-              padding: 0,
-              margin: 0,
-            }}
-          >
-            nas film slike sa snimanja (reklame,promo,spotovi) on scroll
-          </div>
+          <AboutPage />
           <RedEpic />
           <div
             style={{

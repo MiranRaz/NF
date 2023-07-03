@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import nf from "../../assets/nf.png";
+// import nf from "../../assets/nf.png";
+import TitleWrap from "./TitleWrap.jsx";
 
 const HomePage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
     };
@@ -28,7 +29,7 @@ const HomePage = () => {
 
   const imageItemTop = calculateImageItemTop();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("#imageitem", {
       top: () => {
@@ -45,6 +46,17 @@ const HomePage = () => {
       },
     });
   }, [scrollPosition]);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#text-desc", {
+      scrollTrigger: {
+        trigger: "#text-desc",
+        start: "top bottom",
+        end: "bottom top",
+      },
+    });
+  }, []);
 
   return (
     <div
@@ -88,33 +100,25 @@ const HomePage = () => {
       </div>
       <div
         style={{
-          color: "whitesmoke",
+          color: "#E9E9E9",
           display: "flex",
-          flexWrap: "wrap",
           alignItems: "flex-end",
           flexDirection: "column",
         }}
       >
-        <img
-          src={nf}
-          alt={""}
-          style={{
-            width: "888px",
-            paddingRight: "2%",
-            zIndex: 2,
-          }}
-        />
+        <TitleWrap />
         <div
+          id={"text-desc"}
           style={{
-            width: "40%",
+            width: "45%",
             fontSize: "23px",
             position: "absolute",
             top: "50%",
-            right: "10%",
-            textAlign: "center",
-            backgroundColor: "#E9E9E9",
-            color: "black",
+            right: "6%",
+            backgroundColor: "black",
+            color: "#F7F7F7",
             zIndex: 12,
+            textAlign: "justify",
           }}
         >
           `Naš Film` je vrhunska audio i video produkcijska kuća u Sarajevu.

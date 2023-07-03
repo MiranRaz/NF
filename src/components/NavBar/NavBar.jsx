@@ -83,7 +83,7 @@ const NavBar = () => {
             sx={{
               color: "#E9E9E9",
               ...(open && { display: "none" }),
-              opacity: scrollPosition >= 200 ? 1 : 0, // Apply opacity based on scroll position
+              opacity: scrollPosition >= 300 ? 1 : 0, // Apply opacity based on scroll position
               transition: "opacity 0.3s",
             }}
           >
