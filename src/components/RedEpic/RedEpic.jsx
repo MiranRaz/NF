@@ -58,41 +58,39 @@ const RedEpic = () => {
   }, []);
 
   return (
-    <>
-      <div
+    <div
+      style={{
+        position: "relative",
+        height: "100vh",
+        width: "100%",
+        backgroundColor: "#f7f7f7",
+      }}
+    >
+      <canvas
+        id="hero-lightpass"
+        ref={canvasRef}
         style={{
-          position: "relative", // Add relative positioning to the container
-          height: "100vh",
           width: "100%",
-          backgroundColor: "#f7f7f7",
+          height: "100%",
+          objectFit: "contain",
+          position: "absolute",
+          top: 0,
+          left: 0,
         }}
+      />
+      <Button
+        variant="text"
+        sx={{
+          position: "absolute",
+          bottom: "10px",
+          right: "10px",
+          color: "black",
+        }}
+        endIcon={<ArrowForwardIcon />}
       >
-        <canvas
-          id="hero-lightpass"
-          ref={canvasRef}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-            position: "absolute", // Set canvas position to absolute
-            top: 0, // Position the canvas at the top left corner
-            left: 0,
-          }}
-        />
-        <Button
-          variant="text"
-          sx={{
-            position: "absolute",
-            bottom: "10px",
-            right: "10px",
-            color: "black",
-          }}
-          endIcon={<ArrowForwardIcon />}
-        >
-          Check out our gear
-        </Button>
-      </div>
-    </>
+        Check out our gear
+      </Button>
+    </div>
   );
 };
 

@@ -72,12 +72,12 @@ const CustomersText = () => {
         </section>
         <section className="demo-text">
           <div className="wrapper text">
-            |BHTELECOM|FACETV|BAJRA|RAIFFEISEN|BASSIVITY|BIMAL|
+            |EUROASFALT|BHTELECOM|BAJRA|RAIFFEISEN|BASSIVITY|BIMAL|
           </div>
         </section>
         <section className="demo-text" style={{ marginBottom: "24px" }}>
           <div className="wrapper text">
-            |BHTELECOM|FACETV|BAJRA|RAIFFEISEN|BASSIVITY|BIMAL|
+            |RAIFFEISEN|FACETV|RAIFFAISEN|BASSIVITY|BAJRA|BIMAL|
           </div>
         </section>
         <section className="demo-text">

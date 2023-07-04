@@ -8,17 +8,8 @@ import {
   Typography,
   Divider,
   IconButton,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
 } from "@mui/material";
-import {
-  Menu as MenuIcon,
-  Close as CloseIcon,
-  MoveToInbox as InboxIcon,
-  Mail as MailIcon,
-} from "@mui/icons-material";
+import { Menu as MenuIcon, Close as CloseIcon } from "@mui/icons-material";
 import { AppBar, DrawerHeader } from "./NavBarStyling.js";
 import nf2 from "../../assets/nf2.png";
 
@@ -72,6 +63,9 @@ const NavBar = () => {
                 transition: "all 0.5s ease-in-out",
                 width: "87px",
               }}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
               alt={""}
             />
           </Typography>
@@ -80,6 +74,7 @@ const NavBar = () => {
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
+            disabled={scrollPosition < 300}
             sx={{
               color: "#E9E9E9",
               ...(open && { display: "none" }),
@@ -109,30 +104,92 @@ const NavBar = () => {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+        <List
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            height: "80vh",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              height: "100%",
+            }}
+          >
+            <button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid gray",
+                height: "100%",
+                width: "100%",
+              }}
+            >
+              Customers
+            </button>
+            <button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid gray",
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              About
+            </button>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              height: "100%",
+            }}
+          >
+            <button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid gray",
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              Gear
+            </button>
+            <button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid gray",
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              Projects
+            </button>
+          </div>
         </List>
+
         <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+        <List
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "space-around",
+            gap: "8px",
+          }}
+        >
+          <div>ig</div>
+          <div>fb</div>
+          <div>mail</div>
         </List>
       </Drawer>
     </Box>
