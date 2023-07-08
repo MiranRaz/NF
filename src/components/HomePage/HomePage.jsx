@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import nf from "../../assets/nf.png";
 import TitleWrap from "./TitleWrap.jsx";
-
+import "./HomePage.scss";
 const HomePage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -49,9 +49,9 @@ const HomePage = () => {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#text-desc", {
+    gsap.to(".text-desc", {
       scrollTrigger: {
-        trigger: "#text-desc",
+        trigger: ".text-desc",
         start: "top bottom",
         end: "bottom top",
       },
@@ -108,9 +108,8 @@ const HomePage = () => {
       >
         <TitleWrap />
         <div
-          id={"text-desc"}
+          className="text-desc"
           style={{
-            width: "45%",
             height: "auto",
             fontSize: "23px",
             position: "absolute",

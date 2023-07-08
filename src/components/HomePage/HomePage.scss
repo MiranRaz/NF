@@ -7,7 +7,18 @@
   width: 100%;
   color: #f7f7f7;
 }
-
+.text-desc {
+  width: 45%;
+  height: auto;
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  background-color: black;
+  color: #f7f7f7;
+  z-index: 12;
+  text-align: justify;
+}
 @media only screen and (max-width: 1434px) {
   .home-title {
     font-size: 135px;
@@ -24,6 +35,9 @@
   .home-title {
     font-size: 100px;
     left: 60%;
+  }
+  .text-desc {
+    width: 67%;
   }
 }
 @media only screen and (max-width: 400px) {
