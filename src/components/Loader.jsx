@@ -9,11 +9,7 @@ const Loader = () => {
 
     const timeout = setTimeout(() => {
       const interval = setInterval(() => {
-        if (count < 101) {
-          setCount((prevCount) => prevCount + 1);
-        } else {
-          clearInterval(interval);
-        }
+        setCount((prevCount) => prevCount + 1);
       }, incrementDuration / 100); // Increment every (incrementDuration / 100) milliseconds
 
       return () => {
@@ -29,7 +25,7 @@ const Loader = () => {
   return (
     <div
       style={{
-        height: "100vh",
+        height: window.innerHeight,
         width: "100%",
         backgroundColor: "white",
         overflow: "hidden",

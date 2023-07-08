@@ -13,7 +13,7 @@ const RedEpic = () => {
     const scrollMultiplier = 0.1; // Adjust the scroll speed multiplier
 
     const currentFrame = (index) =>
-      `src/assets/red_epic_frames/red_${index
+      `https://raw.githubusercontent.com/MiranRaz/NF/main/src/assets/red_epic_frames/red_${index
         .toString()
         .padStart(0, "0")}.jpeg`; // Update the path and filename pattern for your images
 
