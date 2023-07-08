@@ -18,7 +18,7 @@ const HomePage = () => {
     };
   }, []);
 
-  const testarossaHeight = 378; // Height of the testarossa div
+  const testarossaHeight = 444; // Height of the testarossa div
 
   const calculateImageItemTop = () => {
     const windowHeight = window.innerHeight;
@@ -111,6 +111,7 @@ const HomePage = () => {
           id={"text-desc"}
           style={{
             width: "45%",
+            height: "auto",
             fontSize: "23px",
             position: "absolute",
             top: "50%",
@@ -121,13 +122,8 @@ const HomePage = () => {
             textAlign: "justify",
           }}
         >
-          `Naš Film` je vrhunska audio i video produkcijska kuća u Sarajevu.
-          Nudimo različite mikrofone i opremu za snimanje zvuka, kao i najbolje
-          kamere, objektive i dronove za snimanje visokokvalitetnih video
-          materijala. Naš tim stručnjaka, uključujući reditelje i producente,
-          pruža podršku u režiji i vođenju produkcije. Sa svjetski priznatim
-          standardima za snimanje zvuka i videa, `Naš Film` je vaš pouzdan
-          partner u audio i video produkciji.
+          `Naš Film` je vrhunska audio i video produkcijska kuća u Sarajevu. Mi
+          smo vaš pouzdan partner u audio i video produkciji.
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import "./HomePage.scss";
 
 const TitleWrap = () => {
   useLayoutEffect(() => {
@@ -16,35 +17,7 @@ const TitleWrap = () => {
     });
   }, []);
 
-  return (
-    <div
-      className={"home-title"}
-      style={{
-        fontSize: "234px",
-        paddingRight: "12px",
-        position: "absolute",
-        left: "89%",
-        width: "100%",
-        color: "#F7F7F7",
-      }}
-    >
-      NAŠ FILM
-    </div>
-    // <div
-    //   className={"home-title"}
-    //   style={{
-    //     position: "absolute",
-    //     left: "89%",
-    //   }}
-    // >
-    //   <img
-    //     className={"imedz"}
-    //     src={nf}
-    //     alt={""}
-    //     style={{ width: "877px", height: "300px", paddingRight: "12px" }}
-    //   />
-    // </div>
-  );
+  return <div className={"home-title"}>NAŠ FILM</div>;
 };
 
 export default TitleWrap;

@@ -4,7 +4,7 @@ const CustomersPage = () => {
   return (
     <div
       style={{
-        height: "244vh",
+        height: "auto",
         width: "100%",
         backgroundColor: "#F0EEDE",
       }}

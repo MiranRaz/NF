@@ -9,13 +9,12 @@ header {
 
 .wrapper {
   display: flex;
-  /*display: flex;*/
   margin: 0;
 }
 
 .the-img {
   width: auto;
-  height: 430px;
+  height: 333px;
   background: #f0f0f0;
 }
 ul {
@@ -31,9 +30,22 @@ li {
 }
 
 .demo-text .text {
-  font-size: clamp(13rem, 15vw, 16rem);
+  font-size: 122px;
   line-height: 1;
   font-weight: 900;
   overflow-x: visible;
   margin: 0;
+}
+@media only screen and (max-width: 833px) {
+  .demo-text .text {
+    font-size: 55px;
+  }
+  .the-img {
+    width: 133px;
+    height: 133px;
+    background: #f0f0f0;
+  }
+  li {
+    padding-right: 0.1rem;
+  }
 }
