@@ -121,8 +121,7 @@ const HomePage = () => {
             textAlign: "justify",
           }}
         >
-          `Naš Film` je vrhunska audio i video produkcijska kuća u Sarajevu. Mi
-          smo vaš pouzdan partner u audio i video produkciji.
+          `Naš Film` je audio i video produkcijska kuća iz Sarajeva.
         </div>
       </div>
     </div>

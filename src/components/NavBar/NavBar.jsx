@@ -152,7 +152,7 @@ const NavBar = () => {
                 style={{
                   position: "absolute",
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "40px",
                 }}
               >
                 Customers
@@ -191,7 +191,7 @@ const NavBar = () => {
                 style={{
                   position: "absolute",
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "40px",
                 }}
               >
                 About
@@ -238,7 +238,7 @@ const NavBar = () => {
                 style={{
                   position: "absolute",
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "40px",
                 }}
               >
                 Gear
@@ -277,7 +277,7 @@ const NavBar = () => {
                 style={{
                   position: "absolute",
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "40px",
                 }}
               >
                 Projects
