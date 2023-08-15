@@ -125,11 +125,38 @@ const NavBar = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid gray",
+                backgroundColor: "transparent",
                 height: "100%",
                 width: "100%",
+                overflow: "hidden",
+                cursor: "pointer",
+                position: "relative",
               }}
             >
-              Customers
+              <video
+                autoPlay
+                loop
+                muted
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              >
+                <source
+                  src="https://www.shutterstock.com/shutterstock/videos/1060585801/preview/stock-footage-montage-of-happy-multi-cultural-and-multi-ethnic-people-of-diverse-background-gender-ethnicity.webm"
+                  type="video/webm"
+                />
+              </video>
+              <span
+                style={{
+                  position: "absolute",
+                  color: "white",
+                  fontSize: "22px",
+                }}
+              >
+                Customers
+              </span>
             </button>
             <button
               style={{
@@ -137,11 +164,38 @@ const NavBar = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid gray",
-                width: "100%",
+                backgroundColor: "transparent",
                 height: "100%",
+                width: "100%",
+                overflow: "hidden",
+                cursor: "pointer",
+                position: "relative",
               }}
             >
-              About
+              <video
+                autoPlay
+                loop
+                muted
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              >
+                <source
+                  src="https://www.shutterstock.com/shutterstock/videos/26633884/preview/stock-footage-top-view-of-business-team-working-at-trendy-loft-office-young-mixed-race-group-of-people-puts-palm.webm"
+                  type="video/webm"
+                />
+              </video>
+              <span
+                style={{
+                  position: "absolute",
+                  color: "white",
+                  fontSize: "22px",
+                }}
+              >
+                About
+              </span>
             </button>
           </div>
           <div
@@ -157,11 +211,38 @@ const NavBar = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid gray",
-                width: "100%",
+                backgroundColor: "transparent",
                 height: "100%",
+                width: "100%",
+                overflow: "hidden",
+                cursor: "pointer",
+                position: "relative",
               }}
             >
-              Gear
+              <video
+                autoPlay
+                loop
+                muted
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              >
+                <source
+                  src="https://www.shutterstock.com/shutterstock/videos/1040841707/preview/stock-footage-cameraman-in-process-of-work-in-studio-camera-lens.webm"
+                  type="video/webm"
+                />
+              </video>
+              <span
+                style={{
+                  position: "absolute",
+                  color: "white",
+                  fontSize: "22px",
+                }}
+              >
+                Gear
+              </span>
             </button>
             <button
               style={{
@@ -169,11 +250,38 @@ const NavBar = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid gray",
-                width: "100%",
+                backgroundColor: "transparent",
                 height: "100%",
+                width: "100%",
+                overflow: "hidden",
+                cursor: "pointer",
+                position: "relative",
               }}
             >
-              Projects
+              <video
+                autoPlay
+                loop
+                muted
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              >
+                <source
+                  src="https://www.shutterstock.com/shutterstock/videos/1056908216/preview/stock-footage-broadcast-tv-studio-production-vision-switcher-studio-director-broadcast-video-mixer-operation.webm"
+                  type="video/webm"
+                />
+              </video>
+              <span
+                style={{
+                  position: "absolute",
+                  color: "white",
+                  fontSize: "22px",
+                }}
+              >
+                Projects
+              </span>
             </button>
           </div>
         </List>

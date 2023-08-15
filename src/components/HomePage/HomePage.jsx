@@ -87,7 +87,7 @@ const HomePage = () => {
           id="imageitem"
           style={{
             width: "569px",
-            height: "466px",
+            height: "366px",
             position: "relative",
             top: `${imageItemTop}px`,
             backgroundColor: "#F0EEDE",
